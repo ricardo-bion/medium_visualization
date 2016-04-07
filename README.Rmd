@@ -1,4 +1,11 @@
-# 500k top Airbnb trips: created in R with ggplot2
+---
+title: "500k top Airbnb trips: created in R with ggplot2"
+output:
+  html_document:
+    fig_height: 6
+    fig_width: 12
+    keep_md: yes
+---
 
 A few people asked for a high-resolution image and the code that I used to generate the ggplot2 visualization on my recent Medium post ["Using R Packages and Education to Scale Data Sience at Airbnb"](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d).
 
@@ -17,8 +24,7 @@ A few people asked for a high-resolution image and the code that I used to gener
 
 ### R code:
 
-
-```r
+```{r}
 library(ggplot2)
 library(ggmap)
 library(sp)
@@ -28,8 +34,7 @@ library(plyr)
 ```
 
 
-
-```r
+```{r}
 # source the theme_map for ggplot2
 source("https://dl.dropboxusercontent.com/u/2364714/theme_map.R")
 
@@ -61,9 +66,9 @@ ggplot() +
   theme_map() +
   geom_point(aes(lon, lat),data=trips$geocode_origin, alpha = 0.8, size = 1, colour = "white") +
   geom_point(aes(lon, lat),data=trips$geocode_destination, alpha = 0.8, size = 1, colour = "white")
-```
 
-![](README_files/figure-html/unnamed-chunk-2-1.png)
+
+```
 
 <br>
 <br>
