@@ -5,7 +5,7 @@ A few people asked for a high-resolution image and the code that I used to gener
 ### High-res image:
 
 
-![](https://dl.dropboxusercontent.com/u/2364714/top_airbnb_trips.png)
+![](top_airbnb_trips.png)
 
 <br>
 <br>
@@ -70,4 +70,4 @@ ggplot() +
 
 ### Growth over time:
 
-![](https://dl.dropboxusercontent.com/u/2364714/popular_routes.gif)
+![](popular_routes.gif)
