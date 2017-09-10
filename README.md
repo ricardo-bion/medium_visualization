@@ -31,7 +31,7 @@ library(plyr)
 
 ```r
 # source the theme_map for ggplot2
-source("https://dl.dropboxusercontent.com/u/2364714/theme_map.R")
+source("https://github.com/ricardo-bion/medium_visualization/blob/master/theme_map.R")
 
 # in the original post I had a data.frame with 500k rows of top origin destination pairs
 trips <- data.frame(origin = c("San Francisco", "Sydney"), 
